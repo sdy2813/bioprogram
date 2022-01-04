@@ -224,5 +224,26 @@ tar.bz2>tar.gz>zip>tar
 ```
 压缩率越高，压缩以及解压的时间也就越长。
 
+## pigz
+```bash
+# pigz压缩单个文件
+# -k 表示保留原文件，-9表示最大压缩率
+pigz -k file -9 -p 12
+
+# pigz解压
+unpigz -k -d FreeNAS-11.2-U7.iso.gz 
+
+# pigz压缩目录
+tar -cvf - dir | pigz -k > dir.tar.gz
+# 解压目录
+pigz -k dir.tar.gz -p 12
+tar -xvf dir.tar
+
+# 一步到位
+tar --use-compress-program=pigz -cvpf XXX.tgz XXX
+tar --use-compress-program=pigz -xvpf XXX.tgz
+```
+
+
 ## 总结
 对文件进行压缩能够节省磁盘空间，进行网络传输时，也能节省带宽，但是需要注意的是，空间和时间是需要根据实际应用进行权衡的。解压缩命令较多，为避免在其他平台使用不便，可选择常用命令进行压缩文件。

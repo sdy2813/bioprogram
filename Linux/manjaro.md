@@ -124,6 +124,7 @@ sudo pacman -Su
 参考教程：
 1. [Manjaro的初始配置](https://zhuanlan.zhihu.com/p/343125473)
 2. [Manjaro-KDE安装配置全攻略](https://zhuanlan.zhihu.com/p/114296129)
+3. [WSL2 中使用 systemctl 命令](https://www.isolves.com/it/qt/2020-12-10/34360.html)
 
 
 

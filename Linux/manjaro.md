@@ -107,9 +107,14 @@ $ export LANG=zh_CN.UTF-8
 $ #然后重启电脑如果提示语言更改，保留旧的名称即可
 
 
+```zsh
+如果无法安装yay就这么运行
+sudo pacman -Sy manjaro-keyring
 
+sudo pacman -S manjaro-system
 
-
+sudo pacman -Su
+```
 
 
 

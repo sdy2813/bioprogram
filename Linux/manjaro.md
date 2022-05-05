@@ -1,7 +1,26 @@
 # manjaro
+1. wsl
+
+```
+#安装Scoop
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+Invoke-WebRequest get.scoop.sh | Invoke-Expression
+
+# 安装ManjaroWSL
+scoop bucket add extras
+scoop install manjarowsl
+```
+
+下载[LxRunOffline](https://ddosolitary-builds.sourceforge.io/LxRunOffline/LxRunOffline-v3.5.0-11-gfdab71a-msvc.zip)
+```
+./LxRunOffline.exe list
+./LxRunOffline.exe get-dir -n Manjaro
+icacls D:\Manjaro /grant "sim:(OI)(CI)(F)"
+.\LxRunOffline move -n Ubuntu-18.04 -d D:\Manjaro
+```
 
 
-1. 换源
+2. 换源
 
 启动terminal，输入：
 ```
@@ -30,7 +49,7 @@ sudo pacman -Syyu
 ```
 sudo pacman -S archlinuxcn-keyring
 ```
-5. 安装软件
+3. 安装软件
 
 Manjaro背靠Arch软件仓库，安装软件爽的yp，仓库又全又新，基本上遇不到依赖问题需要手动去搜该怎么安装，这也是我不愿意换回Ubuntu的一个重要原因
 ```

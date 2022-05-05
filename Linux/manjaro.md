@@ -119,8 +119,18 @@ scoop update manjarowsl
 
 ```
 
+常用软件的安装
+```
+yay -S the_silver_searcher
+
+yay -S htop
+
+yay -S exa
+
+yay -S fd
 
 
+```
 ---
 参考教程：
 1. [Manjaro的初始配置](https://zhuanlan.zhihu.com/p/343125473)

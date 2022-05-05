@@ -108,6 +108,8 @@ sudo pacman -Sy manjaro-keyring
 sudo pacman -S manjaro-system
 
 sudo pacman -Su
+
+sudo pacman-mirrors --fasttrack
 ```
 
 ```

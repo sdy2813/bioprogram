@@ -116,7 +116,14 @@ sudo pacman -S manjaro-system
 sudo pacman -Su
 ```
 
+```
+scoop install manjarowsl
 
+scoop uninstall manjarowsl
+
+scoop update manjarowsl
+
+```
 
 
 

@@ -170,6 +170,7 @@ yay -S genie
 2. [Manjaro-KDE安装配置全攻略](https://zhuanlan.zhihu.com/p/114296129)
 3. [WSL2 中使用 systemctl 命令](https://www.isolves.com/it/qt/2020-12-10/34360.html)
 4. [WSL2 的 Linux 中运行 systemctl 命令](https://zhuanlan.zhihu.com/p/335162006)
+5. [Manjaro上的必装软件有这些！](https://zhuanlan.zhihu.com/p/346510961)
 
 
 

@@ -150,9 +150,65 @@ yay -S exa
 
 yay -S fd
 
-yay -S genie-systemd-git
+yay -S 
 
-yay -S rstudio-server-bin
+yay -S rstudio-desktop
+
+yay -S motrix-bin
+
+yay -S spyder
+ 
+yay -S zotero-bin
+ 
+yay -S kdenlive
+
+yay -S wemeet-bin 
+ 
+yay -S gimp
+
+yay -S kompare
+
+yay -S diffuse
+
+yay -S indicator-sysmonitor
+
+sudo pacman -S yay
+
+yay -S firefox
+
+yay -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool
+
+yay -S fcitx5-rime
+
+yay -S foxitreader 
+
+yay -S deepin-wine-wechat
+
+yay -S typora-free-cn
+
+yay -S tff-wps-fonts
+
+yay -S xdg-user-dirs-gtk
+
+yay -S easystroke
+
+yay -S axel
+
+yay -S texstudio
+
+yay -S sublime-text-4
+
+yay -S ttf-sarasa-gothic
+
+yay -S openssh
+
+yay -S kazam
+
+yay -Rns steam-manjaro
+
+yay -Rns onlyoffice-desktopeditors
+
+yay -S visual-studio-code-bin
 ```
 
 # rstudio-server配置

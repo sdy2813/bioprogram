@@ -228,6 +228,7 @@ yay -S genie
 4. [WSL2 的 Linux 中运行 systemctl 命令](https://zhuanlan.zhihu.com/p/335162006)
 5. [Manjaro上的必装软件有这些！](https://zhuanlan.zhihu.com/p/346510961)
 6. [sublime test crack](https://gist.github.com/JerryLokjianming/71dac05f27f8c96ad1c8941b88030451)
+7. [Manjaro KDE 调教配置及美化](https://zhuanlan.zhihu.com/p/460826583)
 
 
 

@@ -220,6 +220,11 @@ yay -S daemonize
 yay -S genie
 ```
 
+# 解决NTFS盘不能挂载
+```
+sudo /sbin/fdisk -l  
+sudo ntfsfix /dev/nvme0n1p5 
+```
 ---
 参考教程：
 1. [Manjaro的初始配置](https://zhuanlan.zhihu.com/p/343125473)

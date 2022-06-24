@@ -235,6 +235,8 @@ sudo ntfsfix /dev/nvme0n1p5
 6. [sublime test crack](https://gist.github.com/JerryLokjianming/71dac05f27f8c96ad1c8941b88030451)
 7. [Manjaro KDE 调教配置及美化](https://zhuanlan.zhihu.com/p/460826583)
 8. [安装Manjaro之后首先要做的是...](https://zhuanlan.zhihu.com/p/90634218)
+9. [折腾不死，就往死里折腾~记Win10系统更新后导致Linux](https://blog.51cto.com/u_15127575/2901889)
+10. [windows更新导致进不去linux](https://blog.csdn.net/weixin_44046493/article/details/123039676)
 
 
 

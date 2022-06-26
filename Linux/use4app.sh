@@ -15,17 +15,17 @@ rm -rf htop-2.2.0
 
 
 # 安装axel
-wget -c https://github.91chifun.workers.dev/https://github.com//axel-download-accelerator/axel/releases/download/v2.17.10/axel-2.17.10.tar.gz
-tar -xzf axel-2.17.10.tar.gz
+wget -c https://gh.ddlc.top/https://github.com/axel-download-accelerator/axel/releases/download/v2.17.11/axel-2.17.11.tar.gz
+tar -xzf axel-2.17.11.tar.gz
 mkdir axel
-cd axel-2.17.10
+cd axel-2.17.11
 ./configure --prefix=$HOME/app/axel
 make && make install
 cd ~/app
-rm -rf axel-2.17.10
+rm -rf axel-2.17.11
 
 # 安装ag
-git clone https://hub.fastgit.org/ggreer/the_silver_searcher.git
+git clone https://mirror.ghproxy.com/https://github.com/ggreer/the_silver_searcher.git
 mkdir ag
 cd the_silver_searcher
 ./build.sh
@@ -36,31 +36,31 @@ rm -rf the_silver_searcher
 
 # 安装duf
 mkdir duf && cd duf
-wget -c https://github.91chifun.workers.dev/https://github.com//muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_x86_64.tar.gz
-tar -xzf duf_0.6.2_linux_x86_64.tar.gz
+wget -c https://gh.ddlc.top/https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_x86_64.tar.gz
+tar -xzf duf_0.8.1_linux_x86_64.tar.gz
 cd ~/app
 #mv duf_0.6.2_linux_x86_64 duf
 
 # bat
-wget -c https://github.91chifun.workers.dev/https://github.com//sharkdp/bat/releases/download/v0.18.0/bat-v0.18.0-i686-unknown-linux-gnu.tar.gz
-tar -xzf bat-v0.18.0-i686-unknown-linux-gnu.tar.gz
-mv bat-v0.18.0-i686-unknown-linux-gnu bat
+wget -c https://gh.ddlc.top/https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-unknown-linux-gnu.tar.gz
+tar -xzf bat-v0.21.0-i686-unknown-linux-gnu.tar.gz
+mv bat-v0.21.0-i686-unknown-linux-gnu bat
 
 # 安装exa
 mkdir exa && cd exa
-wget -c https://github.91chifun.workers.dev/https://github.com//ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+wget -c https://gh.ddlc.top/https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
 unzip exa-linux-x86_64-v0.10.1.zip
 #mv exa-linux-x86_64-v0.10.1 exa
 cd ~/app
 
 # 安装fd
-wget -c https://github.91chifun.workers.dev/https://github.com//sharkdp/fd/releases/download/v8.2.1/fd-v8.2.1-x86_64-unknown-linux-gnu.tar.gz
-tar -xzf fd-v8.2.1-x86_64-unknown-linux-gnu.tar.gz
-mv fd-v8.2.1-x86_64-unknown-linux-gnu fd
+wget -c https://gh.ddlc.top/https://github.com/sharkdp/fd/releases/download/v8.4.0/fd-v8.4.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf fd-v8.4.0-x86_64-unknown-linux-gnu.tar.gz
+mv fd-v8.4.0-x86_64-unknown-linux-gnu fd
 
 # 安装tmux
 ## 先安装依赖
-wget -c https://github.91chifun.workers.dev/https://github.com//libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+wget -c https://gh.ddlc.top/https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 tar -xzf libevent-2.1.12-stable.tar.gz
 mkdir libevent
 cd libevent-2.1.12-stable
@@ -71,10 +71,10 @@ source ~/.zshrc
 cd ~/app
 
 ## 安装tmux
-wget -c https://github.91chifun.workers.dev/https://github.com//tmux/tmux/releases/download/3.2/tmux-3.2.tar.gz
-tar -xzf tmux-3.2.tar.gz
+wget -c https://gh.ddlc.top/https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
+tar -xzf tmux-3.3a.tar.gz
 mkdir tmux
-cd tmux-3.2
+cd tmux-3.3a
 LIBEVENT_PATH=$HOME/app/libevent
 ./configure --prefix=$HOME/app/tmux CFLAGS="-I$LIBEVENT_PATH/include" LDFLAGS="-L$LIBEVENT_PATH/lib"
 make && make install

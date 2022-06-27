@@ -5,9 +5,9 @@ cd ~ && mkdir app
 cd ~/app
 
 # 安装htop
-wget -qO- wget http://hisham.hm/htop/releases/2.2.0/htop-2.2.0.tar.gz | tar xvz -C .
+wget https://gh.ddlc.top/https://github.com/htop-dev/htop/releases/download/3.2.1/htop-3.2.1.tar.xz | tar xvz -C .
 mkdir htop
-cd htop-2.2.0/
+cd htop-3.2.1
 ./configure --prefix=$HOME/app/htop --disable-unicode
 make && make install
 cd ~/app

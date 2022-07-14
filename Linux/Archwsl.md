@@ -1,5 +1,47 @@
 # Archwsl 安装与配置
 
+## 启动wsl
+```
+# 用管理员打开powershell输入
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+## 启用虚拟平台
+```
+# 用管理员打开powershell输入
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+## 下载Linux内核升级包
+```
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+```
+
+## 将WSL2设置为默认版本
+```
+# 用管理员打开powershell输入
+wsl --set-default-version 2
+```
+
+## 下载LxRunOffline
+```
+https://ddosolitary-builds.sourceforge.io/LxRunOffline/LxRunOffline-v3.5.0-11-gfdab71a-msvc.zip
+```
+
+## 下载Archlinux
+```
+https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.gz
+# LxRunOffline i -n <自定义名称> -f <Arch镜像位置> -d <安装系统的位置> -r root.x86_64
+LxRunOffline i -n archlinux -f D:\WSL\archlinux_img\archlinux-bootstrap-2021.10.01-x86_64.tar.gz  -d  D:\WSL\archlinux -r root.x86_64
+```
+
+## 进入系统
+```
+wsl -d <名字>
+wsl -d archlinux
+```
+
+## 令一套
 ```bash
 # 安装scoop
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time

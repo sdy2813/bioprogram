@@ -54,3 +54,7 @@ yay -S the_silver_searcher
 yay -S fd
 ```
 
+
+----
+参考资料：
+1. [wsl安装archlinux(Windows10子系统安装archlinux)](https://zhuanlan.zhihu.com/p/417410431)

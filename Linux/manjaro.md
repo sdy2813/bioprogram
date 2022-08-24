@@ -256,6 +256,8 @@ B1D4C178 2F9DDB16 ABAA74E5 95304BEF
 8. [安装Manjaro之后首先要做的是...](https://zhuanlan.zhihu.com/p/90634218)
 9. [折腾不死，就往死里折腾~记Win10系统更新后导致Linux](https://blog.51cto.com/u_15127575/2901889)
 10. [windows更新导致进不去linux](https://blog.csdn.net/weixin_44046493/article/details/123039676)
+11. [Windows10+Manjaro Linux深度指北](https://breezeshane.github.io/Linux/Manjaro%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/#_1-windows10-manjaro-linux%E6%B7%B1%E5%BA%A6%E6%8C%87%E5%8C%97)
+12. [manjaro技術筆記](http://www.5190m.top/note/2022/5/20/2022-05-20-manjaro.html#gpg-key)
 
 
 

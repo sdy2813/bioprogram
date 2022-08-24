@@ -7,7 +7,7 @@
 ## git 代理
 ```
 # recommend
-git config --global url."https://github.com.cnpmjs.org/".insteadOf "https://github.com/"
+git config --global url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
 ```
 
 ---

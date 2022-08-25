@@ -145,6 +145,8 @@ sudo pacman -Su
 sudo pacman-mirrors --fasttrack
 ```
 
+## 密钥环
+
 
 ## 常用软件的安装
 ```
@@ -207,16 +209,8 @@ yay -Rns onlyoffice-desktopeditors
 yay -S visual-studio-code-bin
 ```
 
-# rstudio-server配置
-```
-yay -S dotnet-sdk
 
-yay -S daemonize
-
-yay -S genie
-```
-
-# 解决NTFS盘不能挂载
+## 解决NTFS盘不能挂载
 ```
 sudo /sbin/fdisk -l  
 sudo ntfsfix /dev/nvme0n1p5 

@@ -10,6 +10,13 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust \
     zdharma-continuum/fast-syntax-highlighting
 
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=20000
+SAVEHIST=20000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
 #Plugin
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions

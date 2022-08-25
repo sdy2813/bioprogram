@@ -73,7 +73,7 @@ github.com/Morganamilo/paru
 
 安装fcitx5（输入法框架）
 ```
-yay -S fcitx5-im
+pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool
 ```
 配置fcitx5的环境变量：
 ```
@@ -81,15 +81,27 @@ vim ~/.pam_environment
 ```
 内容为：
 ```
+INPUT_METHOD  DEFAULT=fcitx5
 GTK_IM_MODULE DEFAULT=fcitx
 QT_IM_MODULE  DEFAULT=fcitx
 XMODIFIERS    DEFAULT=\@im=fcitx
 SDL_IM_MODULE DEFAULT=fcitx
 ```
+或在 ~/.xprofile 写入
+```
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS="@im=fcitx5"
+
+export LANG="zh_CN.UTF-8"
+export LC_CTYPE="zh_CN.UTF-8"
+```
+
 安装fcitx5-rime（输入法引擎）
 ```
 yay -S fcitx5-rime
 ```
+
 安装rime-cloverpinyin（输入方案）
 ```
 yay -S rime-cloverpinyin
@@ -109,7 +121,7 @@ patch:
     - schema: clover
 ```
 
-
+## 更改主目录中英文
 由于经常在终端要操作家目录，中文切换输入法打字很浪费时间，于是把HOME目录改为英文很方便，在网上看了很多都是修改映射文件，但是会出错而且不生效，找到了下面的方法：
 ```
 $ sudo pacman -S xdg-user-dirs-gtk
@@ -120,6 +132,7 @@ $ export LANG=zh_CN.UTF-8
 $ #然后重启电脑如果提示语言更改，保留旧的名称即可
 ```
 
+## 安装AUR
 ```zsh
 如果无法安装yay就这么运行
 sudo pacman -Sy manjaro-keyring
@@ -131,78 +144,60 @@ sudo pacman -Su
 sudo pacman-mirrors --fasttrack
 ```
 
+
+## 常用软件的安装
 ```
-scoop install manjarowsl
+yay -Sy the_silver_searcher
 
-scoop uninstall manjarowsl
+yay -Sy htop
 
-scoop update manjarowsl
+yay -Sy exa
 
-```
+yay -Sy fd
 
-常用软件的安装
-```
-yay -S the_silver_searcher
+yay -Sy rstudio-desktop-bin
 
-yay -S htop
+yay -Sy motrix-bin
 
-yay -S exa
-
-yay -S fd
-
-yay -S 
-
-yay -S rstudio-desktop
-
-yay -S motrix-bin
-
-yay -S spyder
+yay -Sy spyder
  
-yay -S zotero-bin
+yay -Sy zotero-bin
  
-yay -S kdenlive
+yay -Sy kdenlive
 
-yay -S wemeet-bin 
+yay -Sy wemeet-bin 
  
-yay -S gimp
+yay -Sy gimp
 
-yay -S kompare
+yay -Sy kompare
 
-yay -S diffuse
+yay -Sy diffuse
 
-yay -S indicator-sysmonitor
+yay -Sy indicator-sysmonitor
 
-sudo pacman -S yay
+yay -Sy firefox
 
-yay -S firefox
+yay -Sy foxitreader 
 
-yay -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool
+yay -Sy deepin-wine-wechat
 
-yay -S fcitx5-rime
+yay -Sy deepin-wine-qq
 
-yay -S foxitreader 
+yay -Sy typora-free-cn
 
-yay -S deepin-wine-wechat
+yay -Sy easystroke
 
-yay -S typora-free-cn
+yay -Sy axel
 
-yay -S tff-wps-fonts
+yay -Sy texstudio
 
-yay -S xdg-user-dirs-gtk
+yay -Sy sublime-text-4
 
-yay -S easystroke
+yay -Sy ttf-sarasa-gothic
 
-yay -S axel
+yay -Sy openssh
 
-yay -S texstudio
-
-yay -S sublime-text-4
-
-yay -S ttf-sarasa-gothic
-
-yay -S openssh
-
-yay -S kazam
+yay -Sy kazam
 
 yay -Rns steam-manjaro
 

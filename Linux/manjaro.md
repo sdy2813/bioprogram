@@ -25,6 +25,7 @@ icacls D:\Manjaro /grant "sim:(OI)(CI)(F)"
 启动terminal，输入：
 ```
 sudo pacman-mirrors -i -c China -m rank
+sudo pacman-mirrors --fasttrack
 ```
 在弹出的框中选一个最快的源，一个就好，选多了会降低速度
 

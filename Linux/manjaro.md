@@ -1,5 +1,6 @@
-# manjaro
-1. wsl
+# manjaro 安装与配置
+
+## wsl
 
 ```
 #安装Scoop
@@ -19,8 +20,7 @@ icacls D:\Manjaro /grant "sim:(OI)(CI)(F)"
 .\LxRunOffline move -n Ubuntu-18.04 -d D:\Manjaro
 ```
 
-
-2. 换源
+## 换源
 
 启动terminal，输入：
 ```
@@ -50,27 +50,11 @@ sudo pacman -Syyu
 ```
 sudo pacman -S archlinuxcn-keyring
 ```
-3. 安装软件
 
-Manjaro背靠Arch软件仓库，安装软件爽的yp，仓库又全又新，基本上遇不到依赖问题需要手动去搜该怎么安装，这也是我不愿意换回Ubuntu的一个重要原因
-```
-sudo pacman -S yay
-```
-yay是一个用Go语言写的一个AUR助手，有些时候官方仓库没有你想要的软件，就需要通过yay来安装
 
-有了yay，以后就不用sudo pacman了
+## 安装拼音输入法
 
-除了yay之外还有另外一个现在很流行的aur助手叫做paru（rust编写）
-```
-sudo pacman -S paru
-```
-paru相比于yay的优势在于可以用一行命令清除系统上所有不需要的包依赖项，此外在安装来在aur的包的时候会出现对应的PKGBUILD文件让你查看，具体用法可以在其github页面查看：
-Morganamilo/paru​
-github.com/Morganamilo/paru
-
-5.1 安装拼音输入法：
-
-抛弃fcitx4，拥抱fcitx5吧，btw搜狗、百度、google输入法都是垃圾
+抛弃fcitx4，拥抱fcitx5吧
 
 安装fcitx5（输入法框架）
 ```
@@ -134,6 +118,22 @@ $ #然后重启电脑如果提示语言更改，保留旧的名称即可
 ```
 
 ## 安装AUR
+Manjaro背靠Arch软件仓库，安装软件爽的yp，仓库又全又新，基本上遇不到依赖问题需要手动去搜该怎么安装
+```
+sudo pacman -S yay
+```
+yay是一个用Go语言写的一个AUR助手，有些时候官方仓库没有你想要的软件，就需要通过yay来安装
+
+有了yay，以后就不用sudo pacman了
+
+除了yay之外还有另外一个现在很流行的aur助手叫做paru（rust编写）
+```
+sudo pacman -S paru
+```
+paru相比于yay的优势在于可以用一行命令清除系统上所有不需要的包依赖项，此外在安装来在aur的包的时候会出现对应的PKGBUILD文件让你查看，具体用法可以在其github页面查看：
+Morganamilo/paru​
+github.com/Morganamilo/paru
+
 ```zsh
 如果无法安装yay就这么运行
 sudo pacman -Sy manjaro-keyring
@@ -145,7 +145,15 @@ sudo pacman -Su
 sudo pacman-mirrors --fasttrack
 ```
 
-## 密钥环
+## 密钥环损坏
+```
+sudo rm -fr /etc/pacman.d/gnupg #移除旧的keys
+sudo pacman-key --init #确保密匙环已正确初始化
+sudo pacman-key --populate archlinux manjaro  #从 (给定的) 密匙环中重新加载默认密匙
+sudo pacman-key --refresh-keys #从密匙服务器中更新指定的或所有的密匙
+sudo pacman -Syyu #安装更新
+
+```
 
 
 ## 常用软件的安装
@@ -228,7 +236,7 @@ sudo ./install-tl --gui # (依赖图形库tk,没有的话需要pacman -S tk)
 
 ```
 
-
+## sublime text 4 license
 ```
 —– BEGIN LICENSE —–
 Mifeng User
@@ -262,6 +270,7 @@ B1D4C178 2F9DDB16 ABAA74E5 95304BEF
 13. [Manjaro下texlive环境配置指北](https://www.blurredcode.com/2020/08/linux%E4%B8%8Btexlive%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/)
 14. [在 Manjaro 下安装 TeX Live](https://skiyer.github.io/post/manjaro-texlive/)
 15. [在 Manjaro 上安装 LaTeX](https://zhouxianghui.xyz/posts/linux/install-latex/)
+16. [安装manjaro遇到的pgb签名问题终极解决方案](https://www.ippa.top/750.html)
 
 
 

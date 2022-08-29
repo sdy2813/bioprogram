@@ -216,6 +216,17 @@ sudo /sbin/fdisk -l
 sudo ntfsfix /dev/nvme0n1p5 
 ```
 
+## 安装texlive
+```
+axel -a https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive.iso
+
+sudo mount -o loop texlive.iso /mnt
+
+cd /mnt
+
+sudo ./install-tl --gui # (依赖图形库tk,没有的话需要pacman -S tk)
+
+```
 
 
 ```
@@ -248,6 +259,9 @@ B1D4C178 2F9DDB16 ABAA74E5 95304BEF
 10. [windows更新导致进不去linux](https://blog.csdn.net/weixin_44046493/article/details/123039676)
 11. [Windows10+Manjaro Linux深度指北](https://breezeshane.github.io/Linux/Manjaro%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/#_1-windows10-manjaro-linux%E6%B7%B1%E5%BA%A6%E6%8C%87%E5%8C%97)
 12. [manjaro技術筆記](http://www.5190m.top/note/2022/5/20/2022-05-20-manjaro.html#gpg-key)
+13. [Manjaro下texlive环境配置指北](https://www.blurredcode.com/2020/08/linux%E4%B8%8Btexlive%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/)
+14. [在 Manjaro 下安装 TeX Live](https://skiyer.github.io/post/manjaro-texlive/)
+15. [在 Manjaro 上安装 LaTeX](https://zhouxianghui.xyz/posts/linux/install-latex/)
 
 
 

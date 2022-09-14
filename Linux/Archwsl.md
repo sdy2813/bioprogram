@@ -41,7 +41,7 @@ wsl -d <名字>
 wsl -d archlinux
 ```
 
-## 令一套
+## 另一套
 ```bash
 # 安装scoop
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time

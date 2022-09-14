@@ -35,6 +35,14 @@ $  | 匹配字符串末尾 | abc$  | abc[末尾]
 而所谓正则表达式其实就是元字符与普通字符的组合。
 
 
+## 非贪婪匹配
++ .+ is greedy and consumes as many characters as it can.
++ .+? is reluctant and consumes as few characters as it can.
+
+---
+参考资料：
+1. [Difference between ".+" and ".+?"](https://stackoverflow.com/questions/14213848/difference-between-and)
+2. []()
 
 
 

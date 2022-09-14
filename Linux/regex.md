@@ -36,8 +36,8 @@ $  | 匹配字符串末尾 | abc$  | abc[末尾]
 
 
 ## 非贪婪匹配
-+ .+ is greedy and consumes as many characters as it can.
-+ .+? is reluctant and consumes as few characters as it can.
++ `.+` is greedy and consumes as many characters as it can.
++ `.+?` is reluctant and consumes as few characters as it can.
 
 ---
 参考资料：

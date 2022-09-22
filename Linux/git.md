@@ -8,7 +8,7 @@
 ```
 # recommend
 git config --global url."https://hub.fastgit.xyz/".insteadOf "https://github.com/"
-git config --global url."https://cdn.githubjs.cf/".insteadOf "https://github.com/"
+git config --global url."https://kgithub.com".insteadOf "https://github.com/"
 ```
 
 ---

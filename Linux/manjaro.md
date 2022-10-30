@@ -215,6 +215,37 @@ yay -Rns steam-manjaro
 yay -Rns onlyoffice-desktopeditors
 
 yay -S visual-studio-code-bin
+
+yay -S nerd-fonts-complete
+
+yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+
+yay -S pamac-aur
+
+yay -S isoimagewriter 
+
+yay -S okular
+
+yay -S dragon
+
+yay -S falkon
+
+yay -S ksysguard 
+
+yay -S ark
+
+yay -S tk
+
+yay -S flameshot
+
+yay -S bluez bluez-utils bluez-firmware pulseaudio-bluetooth pavucontrol pulseaudio-alsa
+
+yay -S dolphin
+
+yay -S ttf-wps-fonts wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn ttf-ms-fonts
+
+
+
 ```
 
 

@@ -253,6 +253,36 @@ B1D4C178 2F9DDB16 ABAA74E5 95304BEF
 —— END LICENSE ——
 ```
 
+## 双系统grub配置
+
+查看Windows引导分区的UUID
+```
+sudo fdisk -l    ##获取所有硬盘信息
+```
+获取且将引导分区的UUID复制下来 
+```
+sudo blkid /dev/nvme1n1p1
+```
+对 /boot/grub/grub.cfg 进行修改
+```
+sudo vim /boot/grub/grub.cfg ## 找到 /etc/grub.d/30_os-prober
+
+### BEGIN /etc/grub.d/30_os-prober ###
+### END /etc/grub.d/30_os-prober ###
+
+# 将以下内容添加到其中
+
+menuentry 'Microsoft Windows 11' {    ##''内的名称可以自定义
+        insmod part_gpt
+        insmod fat
+        insmod chain
+        search --fs-uuid --no-floppy --set=root XXXX-XXXX    ## XXXX-XXXX就是刚才复制的UUID
+        chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+}
+```
+保存并退出
+
+
 ---
 参考教程：
 1. [Manjaro的初始配置](https://zhuanlan.zhihu.com/p/343125473)
@@ -271,6 +301,7 @@ B1D4C178 2F9DDB16 ABAA74E5 95304BEF
 14. [在 Manjaro 下安装 TeX Live](https://skiyer.github.io/post/manjaro-texlive/)
 15. [在 Manjaro 上安装 LaTeX](https://zhouxianghui.xyz/posts/linux/install-latex/)
 16. [安装manjaro遇到的pgb签名问题终极解决方案](https://www.ippa.top/750.html)
+17. [使用grub实现Linux和Windows双系统的引导](https://blog.csdn.net/weixin_43801670/article/details/125106208)
 
 
 

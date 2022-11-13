@@ -297,6 +297,7 @@ CB6CCBA5 7DE6177B C02C2826 8C9A21B0
 048CC1D0 9748ED54 CAC9D585 90CAD815
 —— END LICENSE ——
 
+https://gist.github.com/maboloshi/feaa63c35f4c2baab24c9aaf9b3f4e47
 ```
 
 ## 双系统grub配置

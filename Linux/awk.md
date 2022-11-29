@@ -68,6 +68,17 @@ awk 'BEGIN {FS="[-:\t]";OFS="\t"}{if(/^#/){print $0}else{$6=$6+$2-1;$7=$7+$2-1;$
 awk '{sum+=$1} END {print sum}' filename
 ```
 
+## 去重
+```
+cat spikeprot1124.tab| awk '!a[$2]++{print}' > spikeprot1124_uniq.tab 
+
+```
+
+## 匹配
+```
+
+awk -F "\t" '{if($2!~/X/)print }' spikeprot1124_uniq.tab > spikeprot1124_uniq_x.tab
+```
 
 ---
 相关教程

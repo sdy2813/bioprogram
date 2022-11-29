@@ -73,7 +73,7 @@ awk '{sum+=$1} END {print sum}' filename
 相关教程
 + [AWK简明教程](https://coolshell.cn/articles/9070.html)
 + [Linux 三剑客之 awk 详解](https://mp.weixin.qq.com/s?__biz=MzAxODI5ODMwOA==&mid=2666545074&idx=1&sn=7a6f86ae45c5e7254b71da7fcbbdef8d&chksm=80dcfb19b7ab720ff5ffc78d77092b805c54b22839e02fbf4741f06be90845552172258ac978&scene=0&xtrack=1#rd)
-
++ [AWK 技巧（取倒列，过滤行，匹配，不匹配，内置变量等）](https://www.cnblogs.com/kevingrace/p/8481965.html)
 
 
 

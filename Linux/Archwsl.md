@@ -96,6 +96,16 @@ yay -S the_silver_searcher
 yay -S fd
 ```
 
+## 网页视频无法播放
+
+```bash
+# 重启 pulseaudio ，此时访问视频无声音、流畅播放
+pulseaudio --kill && pulseaudio --start
+
+# 换用 pipwire-pulse 重启后访问视频有声音、流畅播放
+sudo pacman -S pipewire-pulse
+
+```
 
 ----
 参考资料：

@@ -100,10 +100,21 @@ yay -S fd
 
 ```bash
 # 重启 pulseaudio ，此时访问视频无声音、流畅播放
-pulseaudio --kill && pulseaudio --start
+#pulseaudio --kill && pulseaudio --start
 
 # 换用 pipwire-pulse 重启后访问视频有声音、流畅播放
-sudo pacman -S pipewire-pulse
+sudo pacman -S pipewire pipewire-pulse
+
+# 停止并禁用 PulseAudio
+
+systemctl --user disable --now pulseaudio.socket
+systemctl --user disable --now pulseaudio.service
+
+# 启动并启用 Pipewire
+systemctl --user enable --now pipewire.socket
+systemctl --user enable --now pipewire-pulse.socket
+systemctl --user enable --now pipewire-pulse.service
+systemctl --user enable --now pipewire-media-session.service
 
 ```
 

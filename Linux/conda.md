@@ -12,6 +12,11 @@
 # 下载
 wget -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.07-Linux-x86_64.sh
 
+## mambaforge
+https://download.nuaa.cf/conda-forge/miniforge/releases/download/latest/Mambaforge-Linux-x86_64.sh
+
+# 安装与miniconda一样，只是自带mamba
+
 # 安装
 bash Anaconda3-2020.07-Linux-x86_64.sh
 
@@ -101,11 +106,7 @@ conda search edger
 ```
 
 
-## mambaforge
 
-https://download.nuaa.cf/conda-forge/miniforge/releases/download/latest/Mambaforge-Linux-x86_64.sh
-
-安装与miniconda一样，只是自带mamba
 
 ## Conda环境导出和导入
 ```bash

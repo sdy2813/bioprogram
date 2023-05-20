@@ -99,6 +99,14 @@ conda create -n R r-base=4.0.0
 # 安装R包
 conda search edger
 ```
+
+
+## mambaforge
+
+https://download.nuaa.cf/conda-forge/miniforge/releases/download/latest/Mambaforge-Linux-x86_64.sh
+
+安装与miniconda一样，只是自带mamba
+
 ---
 参考资料
 1. [anaconda 安装指定源的包](https://www.cnblogs.com/lovychen/p/11738883.html)

@@ -107,6 +107,25 @@ https://download.nuaa.cf/conda-forge/miniforge/releases/download/latest/Mambafor
 
 安装与miniconda一样，只是自带mamba
 
+## Conda环境导出和导入
+```bash
+# 假设我们有一个环境叫 bioapp，可以导出为一个yml文件
+conda env export --file bioapp.yml --name bioapp
+
+# 然后换一台电脑，就可以完全重现这个环境了
+# 这么做的另一个优势是yml中明确列出了软件的版本，
+# 使用 conda solving environment时速度会快很多
+conda env create -f bioapp.yml
+```
+
+
+
+
+
+
+
+
+
 ---
 参考资料
 1. [anaconda 安装指定源的包](https://www.cnblogs.com/lovychen/p/11738883.html)

@@ -5,13 +5,13 @@ cd ~ && mkdir app
 cd ~/app
 
 # 安装htop
-wget https://gh.ddlc.top/https://github.com/htop-dev/htop/releases/download/3.2.1/htop-3.2.1.tar.xz | tar xvz -C .
+wget https://gh.ddlc.top/https://github.com/htop-dev/htop/releases/download/3.2.2/htop-3.2.2.tar.xz | tar xvz -C .
 mkdir htop
-cd htop-3.2.1
+cd htop-3.2.2
 ./configure --prefix=$HOME/app/htop --disable-unicode
 make && make install
 cd ~/app
-rm -rf htop-2.2.0
+rm -rf htop-3.2.2
 
 
 # 安装axel
@@ -42,9 +42,9 @@ cd ~/app
 #mv duf_0.6.2_linux_x86_64 duf
 
 # bat
-wget -c https://gh.ddlc.top/https://github.com/sharkdp/bat/releases/download/v0.21.0/bat-v0.21.0-i686-unknown-linux-gnu.tar.gz
-tar -xzf bat-v0.21.0-i686-unknown-linux-gnu.tar.gz
-mv bat-v0.21.0-i686-unknown-linux-gnu bat
+wget -c https://gh.ddlc.top/https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-i686-unknown-linux-gnu.tar.gz
+tar -xzf bat-v0.23.0-i686-unknown-linux-gnu.tar.gz
+mv bat-v0.23.0-i686-unknown-linux-gnu bat
 
 # 安装exa
 mkdir exa && cd exa
@@ -54,9 +54,9 @@ unzip exa-linux-x86_64-v0.10.1.zip
 cd ~/app
 
 # 安装fd
-wget -c https://gh.ddlc.top/https://github.com/sharkdp/fd/releases/download/v8.4.0/fd-v8.4.0-x86_64-unknown-linux-gnu.tar.gz
-tar -xzf fd-v8.4.0-x86_64-unknown-linux-gnu.tar.gz
-mv fd-v8.4.0-x86_64-unknown-linux-gnu fd
+wget -c https://gh.ddlc.top/https://github.com/sharkdp/fd/releases/download/v8.7.0/fd-v8.7.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf fd-v8.7.0-x86_64-unknown-linux-gnu.tar.gz
+mv fd-v8.7.0-x86_64-unknown-linux-gnu fd
 
 # 安装tmux
 ## 先安装依赖

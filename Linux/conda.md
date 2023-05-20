@@ -118,7 +118,31 @@ conda env export --file bioapp.yml --name bioapp
 conda env create -f bioapp.yml
 ```
 
+## 使用conda-pack直接从已经安装好的地方拷贝一份 (同一操作系统)
+```bash
+# 安装 conda-pack
+mamba install -c conda-forge conda-pack
 
+# 打包已经安装好的环境
+conda pack -n my_env_name -o my_env_name.tar.gz
+
+# 拷贝打包好的环境my_env_name.tar.gz到目标机器，并解压到任何目录，一般推荐放到envs目录下 (anaconda_root/envs)。(注意：anaconda_root改为自己的conda安装路径。)
+
+# 解压打包好的环境
+# 默认是全都解压到当前目录，场面很壮观
+# -C 一定要指定
+mkdir -p anaconda_root/envs/my_env
+tar -xzf my_env.tar.gz -C anaconda_root/envs/my_env
+
+# 激活环境
+mamba activate my_env/bin/activate
+
+# Unpack
+conda-unpack
+
+# 至此环境就完全拷贝过来了
+mamba deactivate
+```
 
 
 

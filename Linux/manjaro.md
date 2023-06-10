@@ -350,6 +350,7 @@ menuentry 'Microsoft Windows 11' {    ##''内的名称可以自定义
 16. [安装manjaro遇到的pgb签名问题终极解决方案](https://www.ippa.top/750.html)
 17. [使用grub实现Linux和Windows双系统的引导](https://blog.csdn.net/weixin_43801670/article/details/125106208)
 18. [Cannot install anything AUR with bsdtar broken](https://bbs.archlinux.org/viewtopic.php?id=280386)
+19. https://forum.endeavouros.com/t/error-updating-system-unknown-trust/41182
 
 
 

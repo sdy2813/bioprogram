@@ -12,6 +12,6 @@ iface eno1 inet static
 #address 159.226.126.176
 #netmask 255.255.255.0
 #gateway 159.226.126.125
-    address 192.168.19.176/24
+    address 192.168.19.1/24
     gateway 192.168.19.1
     dns-nameservers 114.114.114.114 8.8.8.8 8.8.4.4

@@ -1,0 +1,15 @@
+
+# Debian bookworm
+deb https://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+
+deb https://security.debian.org/debian-security bookworm-security main 
+deb-src https://security.debian.org/debian-security bookworm-security main 
+
+# bookworm-updates, previously known as 'volatile'
+deb https://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
+
+# bullseye-backports
+# deb https://deb.debian.org/debian bullseye-backports main contrib non-free
+

@@ -123,3 +123,4 @@ systemctl --user enable --now pipewire-media-session.service
 1. [wsl安装archlinux(Windows10子系统安装archlinux)](https://zhuanlan.zhihu.com/p/417410431)
 2. [使用grub实现Linux和Windows双系统的引导](https://blog.csdn.net/weixin_43801670/article/details/125106208)
 3. [Linux 连接蓝牙耳机无法正确识别的解决方案（仅供参考）](https://www.bilibili.com/read/cv16702824?from=search)
+4. [Arch安装网络打印机驱动](https://www.qingsword.com/qing/Arch-6.html)

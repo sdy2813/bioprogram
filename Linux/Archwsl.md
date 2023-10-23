@@ -118,6 +118,11 @@ systemctl --user enable --now pipewire-media-session.service
 
 ```
 
+## 无法从文件管理器挂载磁盘
+```
+sudo mount -t ntfs /dev/sda3 /mnt/ 
+```
+
 ----
 参考资料：
 1. [wsl安装archlinux(Windows10子系统安装archlinux)](https://zhuanlan.zhihu.com/p/417410431)

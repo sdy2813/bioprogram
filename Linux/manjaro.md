@@ -252,7 +252,18 @@ yay -S ttf-wps-fonts wps-office-mui-zh-cn wps-office-mime-cn wps-office-cn ttf-m
 ## 解决NTFS盘不能挂载
 ```
 sudo /sbin/fdisk -l  
-sudo ntfsfix /dev/nvme0n1p5 
+sudo ntfsfix /dev/nvme0n1p5
+
+
+sudo mkdir -p /run/media/sdy/7E7D8E3775164CA1
+sudo chown $USER:$USER /run/media/sdy/7E7D8E3775164CA1
+sudo ntfs-3g /dev/nvme0n1p3 /run/media/sdy/7E7D8E3775164CA1
+
+sudo mkdir -p /run/media/sdy/4983F9404404B592
+sudo chown $USER:$USER /run/media/sdy/4983F9404404B592
+
+sudo ntfs-3g /dev/sda3 /run/media/sdy/4983F9404404B592
+
 ```
 
 ## 安装texlive
